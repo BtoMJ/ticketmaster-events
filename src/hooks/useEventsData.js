@@ -10,7 +10,7 @@ const useEventsData = () =>{
         try{
             const response  =await fetch(`https://app.ticketmaster.com/discovery/v2/events.json?countryCode=MX&apikey=QoiWu7AKhbFxMLio92aB2jiLRKkhkK6l${params?.length ? params : ''}`);
             const data = await response.json();
-            console.log(data);
+            console.log("DATOS DE LA API",data);
             setData(data);
             setIsLoading(false);
         } catch (error){
@@ -20,6 +20,7 @@ const useEventsData = () =>{
 
     return {
         events: data?._embedded?.events || [],
+        page: data?.page || {},
         isLoading,
         error,
         fetchEvents

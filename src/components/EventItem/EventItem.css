@@ -1,0 +1,104 @@
+.event-item-container{
+    width: 700px;
+    height: 350px;
+    border-radius: 11px;
+    background: #FFFFFF;
+    box-shadow:  0px 15px 15px #e8e8e8,
+    -5px -5px 10px #ffffff;
+    margin: 40px;
+}
+
+.event-item-container .title-item-event{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.event-item-container .title-item-event .title-item-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -30px;
+}
+
+.event-item-container .title-item-event h3{
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+.event-item-container .title-item-event .title-item-info h4{
+    font-weight: 400;
+    font-size: .9rem;
+    color: #8d8d8d;
+    margin-top: 5px;
+}
+
+.event-item-container .title-item-event .img-event-item{
+    /* width: 250px; */
+    height: 170px;
+    border-radius: 10px;
+    position: relative;
+    left: -30px;
+    top: -30px;
+    box-shadow:  0px 10px 15px -5px #b8b8b8,
+    -5px -5px 10px #ffffff;
+}
+
+.event-item-container .info-item-event{
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    overflow: hidden;
+}
+.event-item-container .info-item-event p{
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: justify;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+}
+
+.event-item-container .btn-item-container{
+    width: 100%;
+    padding-right: 30px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.event-item-container .btn-see-more{
+    padding: 10px 15px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    /* background-image: linear-gradient( 35deg, #000 10%, #6301a4 80%); */
+    background-color: #9250ff;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+}
+
+.event-item-container .btn-like{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #D8D7D9;
+    background-color: #F2F1F4;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .5s all ease-in-out;
+    /* background-image: linear-gradient( 135deg, #89deff 10%, #cc3fff 100%); */
+}
+
+.event-item-container .btn-see-more:hover,
+.event-item-container .btn-like:hover{
+   transform: scale(1.1);
+   box-shadow:  0px 7px 10px #9F9F9F;
+}

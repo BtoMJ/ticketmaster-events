@@ -1,0 +1,112 @@
+.nav-container{
+    width: 100vw;
+    height: 170px;
+    padding: 0 15vw;
+    margin-bottom: 100px;
+    /* position: absolute;
+    top: 0; */
+    /* background-color: #000; */
+    background-image: linear-gradient(200deg, rgba(171, 171, 171,0.05) 0%, rgba(171, 171, 171,0.05) 23%,rgba(90, 90, 90,0.05) 23%, rgba(90, 90, 90,0.05) 48%,rgba(65, 65, 65,0.05) 48%, rgba(65, 65, 65,0.05) 61%,rgba(232, 232, 232,0.05) 61%, rgba(232, 232, 232,0.05) 100%),linear-gradient(126deg, rgba(194, 194, 194,0.05) 0%, rgba(194, 194, 194,0.05) 11%,rgba(127, 127, 127,0.05) 11%, rgba(127, 127, 127,0.05) 33%,rgba(117, 117, 117,0.05) 33%, rgba(117, 117, 117,0.05) 99%,rgba(248, 248, 248,0.05) 99%, rgba(248, 248, 248,0.05) 100%),linear-gradient(144deg, rgba(64, 64, 64,0.05) 0%, rgba(64, 64, 64,0.05) 33%,rgba(211, 211, 211,0.05) 33%, rgba(211, 211, 211,0.05) 50%,rgba(53, 53, 53,0.05) 50%, rgba(53, 53, 53,0.05) 75%,rgba(144, 144, 144,0.05) 75%, rgba(144, 144, 144,0.05) 100%),linear-gradient(329deg, hsl(148,0%,0%),hsl(148,0%,0%));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: thin dotted #bcbcbc; */
+}
+
+.nav-container .logo-nav{
+    width: 25%;
+}
+
+.nav-container img{
+    height: 90px;
+    margin-right: 30px;
+}
+
+.nav-container .input-nav{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container .login-nav{
+    width: 20%;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.nav-container .input-nav .search-input{
+    width: 400px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: transparent;
+}
+
+.nav-container .search-input::placeholder{
+    color: #bcbcbc;
+}
+
+.nav-container .input-nav .search-input:focus{
+    outline: 2px solid #9250ff; 
+}
+
+.nav-container .input-nav .btn-search-nav{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    margin-left: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(145deg,rgba(52, 0, 131,1) 40%, rgba(227, 21, 249, 0.75));
+    transition: .5s all ease-in-out;
+}
+.nav-container .input-nav .btn-clean-search-disable .btn-icon-seach-nav,
+.nav-container .input-nav .btn-clean-search-nav .btn-icon-seach-nav,
+.nav-container .input-nav .btn-search-nav .btn-icon-seach-nav{
+    margin-right: 10px;
+}
+
+.nav-container .input-nav .btn-clean-search-nav:hover,
+.nav-container .input-nav .btn-search-nav:hover{
+    background-image: linear-gradient(145deg,rgba(227, 21, 249, 0.75) 10%, rgba(52, 0, 131,1));
+}
+
+.nav-container .input-nav .btn-clean-search-nav{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    margin-left: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(145deg,rgba(52, 0, 131,1) 40%, rgba(227, 21, 249, 0.75));
+    transition: .5s all ease-in-out;
+}
+
+.nav-container .input-nav .btn-clean-search-disable{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #696969;
+    margin-left: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(145deg,rgb(24, 24, 24) 40%, rgba(71, 71, 71, 0.75));
+    transition: .5s all ease-in-out;
+}
+
+.nav-container .login-nav p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-container .login-nav .icon-login{
+    font-size: 1.7rem;
+    margin-left: 15px;
+    color: rgba(227, 21, 249, 0.75);
+}
