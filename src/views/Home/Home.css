@@ -53,5 +53,5 @@
     border: none;
     color: #787878;
     font-weight: 300;
-    cursor:default;
+    cursor: not-allowed;
 }

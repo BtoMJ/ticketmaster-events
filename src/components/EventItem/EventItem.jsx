@@ -19,7 +19,7 @@ const EventItem =( { info, id, name, image, type, genre, onEventClick} ) => {
                 </div>
             </div>
             <div className='info-item-event'>
-                <p>{info}</p>
+                <p>{info ? info : "Descripción del evento no disponible"}</p>
             </div>
             <div className='btn-item-container'>
                 <button className="btn-like"><FaHeart /></button>
