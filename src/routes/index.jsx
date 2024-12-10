@@ -3,12 +3,19 @@ import Home from "../views/Home/Home";
 import Detail from "../views/Detail/Detail";
 import Error404 from "../views/Error404/Error404";
 import Profle from "../views/Profile/Profile";
+import Login from "../views/Login/Login";
+import MyInfo from "../views/Profile/MyInfo";
+import LikedEvents from "../views/Profile/LikedEvents";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Home />,
         errorElement: <Error404 />
+    },
+    {
+        path: '/login',
+        element: <Login />,
     },
     {
         path: '/detail/:eventId',
@@ -20,11 +27,11 @@ const router = createBrowserRouter([
         children: [
             {
                 path: 'my-info',
-                element: <>My Info</>
+                element: <MyInfo />
             },
             {
                 path: 'liked-events',
-                element: <>Liked Events</>
+                element: <LikedEvents />
             }
         ]
     }

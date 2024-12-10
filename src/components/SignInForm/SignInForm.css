@@ -1,0 +1,71 @@
+.sign-in-container{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -80px;
+}
+
+.sign-in-container .btn-form-container,
+.sign-in-container input,
+.sign-in-container label{
+    width: 100%;
+}
+
+.sign-in-container label{
+    font-size: .8rem;
+    color: #1b1b1b;
+}
+
+.sign-in-container input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #D8D7D9;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+.sign-in-container input:focus{
+    border: none;
+    outline: 1px solid #6e2dd6;
+}
+
+.sign-in-container .btn-form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sign-in-container .btn-form-container button{
+    border: none;
+    padding: 7px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #9250ff;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+}
+
+.sign-in-container .btn-form-container button:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(0deg,#6e2dd6 40%, #9250ff);
+    box-shadow:  0px 7px 10px #aeaeae;
+}
+
+.sign-in-container a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: #cccccc;
+    transition: .5s all ease-in-out;
+    margin: 30px 0;
+}
+
+.sign-in-container a:hover{
+    transform: scale(1.1);
+    color: #1f0557;
+}

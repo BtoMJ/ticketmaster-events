@@ -2,6 +2,7 @@ import { useState, forwardRef, useImperativeHandle } from "react";
 import logo from '../../assets/logo.png';
 import { FaUserCircle, FaSearch, FaEraser   } from "react-icons/fa";
 import './Navbar.css';
+import { Link } from "react-router-dom";
 
 const NavBar = forwardRef( ( { onSearch }, ref ) => {
 
@@ -58,10 +59,11 @@ const NavBar = forwardRef( ( { onSearch }, ref ) => {
                 > <FaEraser className="btn-icon-seach-nav" />Limpiar
                 </button> 
             </div>
-            <div className="login-nav">
-                <p>Entrar</p>
+            
+            <Link className="login-nav" to="/profile/my-info">
+                <p>Mi Perfil</p>
                 <FaUserCircle className="icon-login"/>
-            </div>
+            </Link>
 
         </div>
     )

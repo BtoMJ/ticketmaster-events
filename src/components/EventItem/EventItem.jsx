@@ -1,12 +1,19 @@
 // import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
+import useLikeEvents from "../../hooks/useLikeEvents";
 import './EventItem.css';
 
 const EventItem =( { info, id, name, image, type, genre, onEventClick} ) => {
 
+    const { isEventLiked, toggleEventLike } = useLikeEvents (id);
+
     const handleSeeMoreClick = (e) => {
         e.stopPropagation();
         onEventClick(id)
+    }
+
+    const handleLikeClick = () => {
+        toggleEventLike();
     }
 
     return(
@@ -22,7 +29,7 @@ const EventItem =( { info, id, name, image, type, genre, onEventClick} ) => {
                 <p>{info ? info : "Descripción del evento no disponible"}</p>
             </div>
             <div className='btn-item-container'>
-                <button className="btn-like"><FaHeart /></button>
+                <button className={ isEventLiked ? "btn-like" : "btn-no-like"} onClick={handleLikeClick}><FaHeart /></button>
                 <button className='btn-see-more' onClick={handleSeeMoreClick} >+ Ver más
                     {/* <Link to={`/detail/${id}`}>
                         Ver más 

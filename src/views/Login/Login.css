@@ -1,0 +1,75 @@
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle at 29% 55%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 4%,transparent 4%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 85% 89%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 52%,transparent 52%, transparent 100%),radial-gradient(circle at 6% 90%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 53%,transparent 53%, transparent 64%,transparent 64%, transparent 100%),radial-gradient(circle at 35% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 6%,transparent 6%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 56% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 16%,transparent 16%, transparent 23%,transparent 23%, transparent 100%),radial-gradient(circle at 42% 0%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 3%,transparent 3%, transparent 26%,transparent 26%, transparent 100%),radial-gradient(circle at 29% 28%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 77% 21%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 35%,transparent 35%, transparent 55%,transparent 55%, transparent 100%),radial-gradient(circle at 65% 91%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 46%,transparent 46%, transparent 76%,transparent 76%, transparent 100%),linear-gradient(45deg, rgb(83, 91, 235),rgb(76, 11, 174));
+}
+
+.login-container .form-container{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    transition: .5s all ease-in-out;
+    box-shadow:  0px 5px 15px #1f0557;
+}
+
+.login-container .form-container .logo{
+    width: 190px;
+    height: 130px;
+    border-radius: 25px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -80px;
+    box-shadow:  0px 7px 10px #aeaeae;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+
+.login-container .form-container .logo:hover img{
+    transform: rotateY(360deg);
+}
+
+.login-container .form-container .logo img{
+    width: 150px;
+    transition: 1.5s all ease-in;
+    transform-style: preserve-3d;
+}
+
+.login-container .form-container .options-form{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: -80px;
+}
+
+.login-container .form-container .options-form p{
+    margin: 0 10px;
+    font-size: .9rem;
+    transition: .5s all ease-in-out;
+    color: #cccccc;
+}
+
+.login-container .form-container .options-form p:hover{
+    transform: scale(1.1);
+    color: #1f0557;
+}
+
+.login-container .form-container .options-form .active{
+    color: #1f0557;
+}

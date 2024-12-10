@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import './SignUpForm.css';
 
 const SignUpForm = () => {
 
@@ -14,40 +15,37 @@ const SignUpForm = () => {
 
     console.log(errors)
 
-
     return(
-        <div>
+        <div className="sign-up-container">
+
             <form onSubmit={handleSubmit(handleSubmitForm)}>
                 <label>
-                    Name
+                    Nombre
                     <input {...register('name', { required:true })}  />
                 </label>
                 <br />
                 <label>
-                    Age
-                    <input {...register('age', { required:true })}  />
+                    Correo
+                    <input {...register('mail', { required:true })}  />
                 </label>
                 <br />
                 <label>
-                    Address
+                    Teléfono
                     <input {...register('address', { required:true })}  />
                 </label>
                 <br />
                 <label>
-                    Zipcode
+                    Contraseña
                     <input {...register('zipcode', { required:true })}  />
                 </label>
                 <br />
-                <label>
-                    Phone
-                    <input {...register('phone', { required:true })}  />
-                </label>
-                <br />
-                <div>
+                <div className="btn-form-container">
                     <button type="button" onClick={handleClearClick}>Limpiar</button>
                     <button type="submit">Enviar</button>
                 </div>
             </form>
+            <a href="/">Regresar</a>
+
         </div>
     )
 }
