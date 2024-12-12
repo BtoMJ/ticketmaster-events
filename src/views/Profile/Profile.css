@@ -1,3 +1,73 @@
+.profile-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-container .box-tab{
+    width: 60vw;
+}
+
+.profile-container .tabs-container span{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
 .active{
     border-bottom: 1px solid #ccc;
 }
+
+/*********************** MY INFO  *****************************/
+
+.my-info-container{
+    width: 80%;
+    border: thin dotted #000;
+}
+
+.my-info-container label{
+    font-size: .8rem;
+    color: #1b1b1b;
+}
+
+.my-info-container input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #D8D7D9;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+.my-info-container input:focus{
+    border: none;
+    outline: 1px solid #6e2dd6;
+}
+
+.my-info-container .btn-form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.my-info-container .btn-form-container button{
+    border: none;
+    padding: 7px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #9250ff;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+}
+
+.my-info-container .btn-form-container button:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(0deg,#6e2dd6 40%, #9250ff);
+    box-shadow:  0px 7px 10px #aeaeae;
+}
+
+/*********************** LIKED EVENTS  *****************************/

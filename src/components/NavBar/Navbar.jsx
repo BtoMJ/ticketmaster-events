@@ -60,7 +60,7 @@ const NavBar = forwardRef( ( { onSearch }, ref ) => {
                 </button> 
             </div>
             
-            <Link className="login-nav" to="/profile/my-info">
+            <Link className="login-nav" to="/profile">
                 <p>Mi Perfil</p>
                 <FaUserCircle className="icon-login"/>
             </Link>

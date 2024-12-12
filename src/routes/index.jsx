@@ -4,8 +4,8 @@ import Detail from "../views/Detail/Detail";
 import Error404 from "../views/Error404/Error404";
 import Profle from "../views/Profile/Profile";
 import Login from "../views/Login/Login";
-import MyInfo from "../views/Profile/MyInfo";
-import LikedEvents from "../views/Profile/LikedEvents";
+// import MyInfo from "../views/Profile/MyInfo";
+// import LikedEvents from "../views/Profile/LikedEvents";
 
 const router = createBrowserRouter([
     {
@@ -23,18 +23,22 @@ const router = createBrowserRouter([
     },
     {
         path: '/profile',
-        element: <Profle />,
-        children: [
-            {
-                path: 'my-info',
-                element: <MyInfo />
-            },
-            {
-                path: 'liked-events',
-                element: <LikedEvents />
-            }
-        ]
-    }
+        element: <Profle />
+    },
+    // {
+    //     path: '/profile',
+    //     element: <Profle />,
+    //     children: [
+    //         {
+    //             path: 'my-info',
+    //             element: <MyInfo />
+    //         },
+    //         {
+    //             path: 'liked-events',
+    //             element: <LikedEvents />
+    //         }
+    //     ]
+    // }
 ]);
 
 const MyRoutes = () =>  <RouterProvider router={router} />;
