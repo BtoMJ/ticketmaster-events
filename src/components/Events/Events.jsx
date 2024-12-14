@@ -23,7 +23,7 @@ const Events = ( { searchTerm, events } ) => {
                 key={`even-item-${eventItem.id}`}
                 name={eventItem.name}
                 info = {eventItem.info}
-                image={eventItem.images[4].url}
+                image={eventItem.images[6].url}
                 onEventClick = {handleEventItemClick}
                 id={eventItem.id}
                 type={eventItem.classifications[0].segment.name}

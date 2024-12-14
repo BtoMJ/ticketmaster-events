@@ -43,7 +43,7 @@
 }
 
 .login-container .form-container .logo img{
-    width: 150px;
+    height: 65%;
     transition: 1.5s all ease-in;
     transform-style: preserve-3d;
 }
@@ -63,6 +63,7 @@
     font-size: .9rem;
     transition: .5s all ease-in-out;
     color: #cccccc;
+    border: none;
 }
 
 .login-container .form-container .options-form p:hover{

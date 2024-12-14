@@ -7,6 +7,8 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import MyInfo from './MyInfo.jsx';
 import LinkedEvents from './LikedEvents.jsx';
+import { Link } from 'react-router-dom';
+import { FaUser, FaHeart, FaArrowLeft } from "react-icons/fa";
 import './Profile.css';
 
 const Profle = () => {
@@ -26,19 +28,20 @@ const Profle = () => {
 
     return(
         <div className="profile-container">
-
-        <Box className="box-tab">
-            <TabContext value={value}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <TabList onChange={handleChange} aria-label="lab API tabs example" centered>
-                    <Tab label="Mi información" value="1" />
-                    <Tab label="Eventos Favoritos" value="2" />
-                </TabList>
-                </Box>
-                <TabPanel value="1"> <MyInfo /> </TabPanel>
-                <TabPanel value="2"> <LinkedEvents  /> </TabPanel>
-            </TabContext>
-        </Box>
+            <Link to="/" className='link-go-back'><FaArrowLeft className='icon-go-back'/>Volver</Link>
+            <Box className="box-tab">
+                <TabContext value={value}>
+                    <Box>
+                    <TabList onChange={handleChange} aria-label="lab API tabs example" centered>
+                        <Tab className='tab-title' label="Mi información" value="1" icon={<FaUser />} iconPosition="start" />
+                        <Tab className='tab-title' label="Eventos Favoritos" value="2" icon={<FaHeart />} iconPosition="start" />
+                    </TabList>
+                    </Box>
+                    <TabPanel value="1"> <MyInfo /> </TabPanel>
+                    <TabPanel value="2"> <LinkedEvents  /> </TabPanel>
+                </TabContext>
+                <p></p>
+            </Box>
 
             {/* <div className="tabs-container">
                 <span
@@ -57,6 +60,7 @@ const Profle = () => {
             </div> */}
 
             {/* <Outlet /> */}
+            
         </div>
     )
 }

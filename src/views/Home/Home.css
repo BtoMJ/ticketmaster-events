@@ -1,3 +1,17 @@
+
+.loading-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000070;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 11;
+}
+
 .pagination{
     display: flex;
     align-items: center;
@@ -18,7 +32,7 @@
     justify-content: center;
     color: #2d2d2d;
     border: 1px solid #D8D7D9;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: 300;
     transition: .5s all ease-in-out;
 }
