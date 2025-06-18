@@ -29,7 +29,9 @@ const Home = () => {
   };
 
   const handlePageClick = ( { selected } ) => {
-    console.log("PAG. SELECTED",selected);
+     const newOffset = (selected * 10) % page.length;
+    console.log("PAGINA SELECCIONADA: ",newOffset);
+    // console.log("PAGINA SELECCIONADA: ",selected + 1);
     fetchEvents(`&keyword=${searchTerm}&page=${selected}`)
   }
 
@@ -48,14 +50,15 @@ const Home = () => {
       <div>
         <Events searchTerm={searchTerm} events={events} />
         <ReactPaginate
-          className='pagination'
+          className="pagination"
           breakLabel="..."
           nextLabel=">"
           onPageChange={handlePageClick}
           pageRangeDisplayed={5}
-          pageCount={page.totalPages}
+          pageCount={Math.ceil(page.totalPages)}
           previousLabel="<"
           renderOnZeroPageCount={null}
+          activeClassName="active"
         />
       </div>
     )  

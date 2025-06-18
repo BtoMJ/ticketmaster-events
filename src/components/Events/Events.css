@@ -1,8 +1,55 @@
+@media (320px <= width <= 480px){
+
+    .events-container{
+        width: 90vw;
+        flex-direction: column;
+    }
+
+}
+
+@media (481px <= width <= 767px){
+}
+
+@media (768px <= width <= 1023px){
+
+    .events-container{
+        width: 95vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (1024px <= width <= 1199px){
+
+    .events-container{
+        width: 95vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (1200px <= width <= 1919px){
+
+    .events-container{
+        width: 90vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (1920px <= width <= 2600px){
+
+    .events-container{
+        width: 90vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 .events-container{
-    width: 90vw;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }

@@ -1,3 +1,26 @@
+@media (320px <= width <= 480px){
+}
+
+@media (481px <= width <= 767px){
+}
+
+@media (768px <= width <= 1023px){
+
+}
+
+@media (1024px <= width <= 1199px){
+
+}
+
+@media (1200px <= width <= 1919px){
+
+    
+}
+
+@media (1920px <= width <= 2600px){
+}
+
+
 
 .loading-page{
     width: 100vw;
@@ -44,7 +67,7 @@
     font-weight: bold;
 }
 
-.pagination .selected{
+.pagination li.active {
     background-color: #9250ff30;
     border: 1px solid #9250ff;
     color: #9250ff;

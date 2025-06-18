@@ -65,7 +65,12 @@ const Detail = () => {
                 <div className="info-detail-event">
                     <h3>{eventData.name}</h3>
                     <h4><span>Tipo:</span> {eventData.classifications?.[0].segment.name} / <span>Género:</span> {eventData.classifications?.[0].subGenre.name}</h4>
-                    <h2><span>Precios:</span> ${eventData.priceRanges?.[0].min} hasta ${eventData.priceRanges?.[0].max} {eventData.priceRanges?.[0].currency}</h2>
+                    <h2>
+                        <span>Precios:</span> 
+                        {
+                            eventData.priceRanges?.[0].min && eventData.priceRanges?.[0].max > 0 ? eventData.priceRanges?.[0].min + " hasta " +  eventData.priceRanges?.[0].max: " Sin datos "
+                        }
+                    </h2>
                     <p className="title-event">Información del evento:</p>
                     <p className={ infoCharacters > 500 ? "info scroll"  : "info"}>{eventData.info ? eventData.info :"Descripción del evento no disponible"}</p>
                     <p className="title-event">Fecha y hora del evento:</p>
