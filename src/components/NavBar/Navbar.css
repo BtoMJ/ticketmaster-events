@@ -1,4 +1,75 @@
 @media (320px <= width <= 480px){
+
+    .nav-container{
+        height: 200px;
+        padding: 0 2vw;
+        flex-direction: column !important;
+    }
+
+    .nav-container .logo-nav{
+        margin-bottom: 15px;
+    }
+    
+    .nav-container img{
+        height: 60px;
+    }
+    
+    .nav-container .input-nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .nav-container .input-nav .btn-mobile-container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 15px
+    }
+    
+    .nav-container .input-nav .btn-mobile-container .login-nav-mobile,
+    .nav-container .input-nav .btn-mobile-container .btn-clean-search-nav-mobile,
+    .nav-container .input-nav .btn-mobile-container .btn-search-nav-mobile{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50px;
+        color: #FFF;
+        background-image: linear-gradient(145deg,rgba(52, 0, 131,1) 40%, rgba(227, 21, 249, 0.75));
+    }
+
+    .nav-container .input-nav .btn-mobile-container .btn-clean-search-disable-mobile{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50px;
+        color: #696969;
+        background-image: linear-gradient(145deg,rgb(24, 24, 24) 40%, rgba(71, 71, 71, 0.75));
+        cursor: not-allowed;
+    }
+    
+    .nav-container .input-nav .btn-clean-search-disable,
+    .nav-container .input-nav .btn-clean-search-nav,
+    .nav-container .input-nav .btn-search-nav{
+        display: none;
+    }
+
+    .nav-container .login-nav{
+        display: none !important;
+    }
+
+    .nav-container .input-nav .search-input{
+        padding: 7px 10px !important;
+        width: 100%;
+    }
+
+
     
 }
 
@@ -220,12 +291,12 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    color: #696969;
     margin-left: 10px;
     cursor: pointer;
+    color: #696969;
     background-image: linear-gradient(145deg,rgb(24, 24, 24) 40%, rgba(71, 71, 71, 0.75));
-    transition: .5s all ease-in-out;
     cursor: not-allowed;
+    transition: .5s all ease-in-out;
 }
 
 .nav-container .login-nav p{

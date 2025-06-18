@@ -47,17 +47,41 @@ const NavBar = forwardRef( ( { onSearch }, ref ) => {
                     onKeyDown={handleInputKeyDown}
                     value={search}
                 />
+
                 <button
                     className="btn-search-nav" 
                     onClick={handleButtonClickSearch}
                 ><FaSearch className="btn-icon-seach-nav" /> Buscar
                 </button>
+
                 <button 
                     className={search?.length ? 'btn-clean-search-nav' : 'btn-clean-search-disable' }
                     onClick={cleanInputSearch}
                     disabled={search?.length ? '': 'disabled'}
                 > <FaEraser className="btn-icon-seach-nav" />Limpiar
                 </button> 
+
+                <div className="btn-mobile-container">
+
+                    <button
+                        className="btn-search-nav-mobile" 
+                        onClick={handleButtonClickSearch}
+                    ><FaSearch className="btn-icon-seach-nav" /> 
+                    </button>
+
+                    <button 
+                        className={search?.length ? 'btn-clean-search-nav-mobile' : 'btn-clean-search-disable-mobile' }
+                        onClick={cleanInputSearch}
+                        disabled={search?.length ? '': 'disabled'}
+                    > <FaEraser className="btn-icon-seach-nav" />
+                    </button> 
+
+                    <Link className="login-nav-mobile" to="/profile">
+                        <FaUserCircle className="icon-login"/>
+                    </Link>
+
+                </div>
+
             </div>
             
             <Link className="login-nav" to="/profile">

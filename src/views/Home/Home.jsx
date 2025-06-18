@@ -54,7 +54,7 @@ const Home = () => {
           breakLabel="..."
           nextLabel=">"
           onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
+          pageRangeDisplayed={ window.innerWidth < 481 ? 3 : 5}
           pageCount={Math.ceil(page.totalPages)}
           previousLabel="<"
           renderOnZeroPageCount={null}

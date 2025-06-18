@@ -1,4 +1,18 @@
 @media (320px <= width <= 480px){
+
+    .pagination{
+        width: 95vw !important;
+        margin: 0 auto;
+    }
+
+    .pagination li{
+        width: 30px !important;
+        height: 30px !important;
+        padding: 5px !important;
+        margin: 0 5px !important;
+        font-size: .8rem !important;
+    }
+
 }
 
 @media (481px <= width <= 767px){

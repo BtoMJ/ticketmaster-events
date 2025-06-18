@@ -1,8 +1,9 @@
 @media (320px <= width <= 480px){
 
     .events-container{
-        width: 90vw;
+        width: 95vw;
         flex-direction: column;
+        flex-wrap: wrap !important;
     }
 
 }
